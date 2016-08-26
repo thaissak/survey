@@ -1,4 +1,3 @@
 # Learning Project
 >>Stack:MEAN
->>Type: Belt Exam
->>Description: Learning project (MongoExpressAngularNode)
+>>Description: Coding Dojo's learning project (MongoExpressAngularNode)
