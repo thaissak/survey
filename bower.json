@@ -1,0 +1,16 @@
+{
+  "name": "sample",
+  "homepage": "https://github.com/thaissak/python_BE",
+  "authors": [
+    "thaissak <thaissa.kobayashi@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular": "^1.5.7",
+    "angular-route": "^1.5.7",
+    "angular-messages": "^1.5.8"
+  }
+}

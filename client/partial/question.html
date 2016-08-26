@@ -1,0 +1,34 @@
+<h1>Products</h1>
+
+<a href="#/polls">Go to Polls</a>
+
+<h3>{{question.text }}</h3>
+<table id="cust_table">
+    <thead>
+        <tr>
+            <th>Option</th>
+            <th>Votes</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{{ question.option_one }}</td>
+            <td>{{ question.vote_one }}</td>
+            <td><button ng-click="addVote(question._id, 'vote_one')">Vote</button></td> 
+        </tr>
+        <tr>
+            <td>{{ question.option_two }}</td>
+            <td>{{ question.vote_two }}</td>
+            <td><button type="submit" ng-click="addVote(question._id, 'vote_two')">Vote</button></td>
+        </tr>
+            <td>{{ question.option_three }}</td>
+            <td>{{ question.vote_three }}</td>
+            <td><button type="submit" ng-click="addVote(question._id, 'vote_three')">Vote</button></td> 
+        <tr>
+            <td>{{ question.option_four }}</td>
+            <td>{{ question.vote_four}}</td>
+            <td><button type="submit" ng-click="addVote(question._id, 'vote_four')">Vote</button></td>
+        </tr>           
+    </tbody>
+</table>

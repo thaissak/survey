@@ -1,0 +1,16 @@
+<h1>Put the Question and options here:</h1>
+
+<a href="#/polls">Cancel</a>
+
+<form name="question">
+
+ 	<h3>{{ error }}</h3>
+	Question:<input type="text" name="text" ng-model="newQuestion.text" ng-minlength = "8" required></input>
+	Option 1:<input type="text" name="option" ng-model="newQuestion.option_one" ng-minlength = "3" required></input>
+	Option 2:<input type="text" name="option" ng-model="newQuestion.option_two" ng-minlength = "3" required></input>
+	Option 3:<input type="text" name="option" ng-model="newQuestion.option_three" ng-minlength = "3" required></input>
+	Option 4:<input type="text" name="option" ng-model="newQuestion.option_four" ng-minlength = "3" required></input>
+	<button type="submit" ng-click="addQuestion()">Create Poll</button>
+</form>
+
+

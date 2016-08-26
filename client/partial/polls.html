@@ -1,0 +1,33 @@
+<h1>Current Polls:</h1>
+
+<a href="#/polls/new">Create a New Poll</a>
+<div ng-controller ="userController">
+    <button ng-click="logout()">Logout</button>
+</div>
+
+
+<input id="search_bar" type="text" ng-model="filter_polls" placeholder="Search"></input>
+
+<table id="cust_table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Survey Question</th>
+            <th>Date Posted</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="question in questions | orderBy: 'createdAt' | filter: filter_polls">
+            <td>{{ question._name.name }}</td>
+            <td><a href="#/question/{{ question._id }}/vote">{{ question.text }}</a></td>
+            <td>{{ question.createdAt | date }}</td> 
+            <td>
+                <div ng-if="loggedUser == question._name._id">
+                    <button ng-click="deleteQuestion(question._id)">Delete</button>
+                </div>
+            </td> 
+        </tr>           
+    </tbody>
+</table>
+
